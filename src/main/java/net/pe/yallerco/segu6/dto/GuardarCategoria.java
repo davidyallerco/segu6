@@ -9,8 +9,6 @@ public class GuardarCategoria implements Serializable{
 
 	@NotBlank
 	private String nombre;
-//	private BigDecimal precio;
-//	private Long categoriaId;
 	
 	
 	public String getNombre() {
@@ -19,18 +17,7 @@ public class GuardarCategoria implements Serializable{
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-//	public BigDecimal getPrecio() {
-//		return precio;
-//	}
-//	public void setPrecio(BigDecimal precio) {
-//		this.precio = precio;
-//	}
-//	public Long getCategoriaId() {
-//		return categoriaId;
-//	}
-//	public void setCategoriaId(Long categoriaId) {
-//		this.categoriaId = categoriaId;
-//	}
+
 	
 	
 	

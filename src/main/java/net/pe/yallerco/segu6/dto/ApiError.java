@@ -5,43 +5,67 @@ import java.time.LocalDateTime;
 
 public class ApiError implements Serializable {
 
-    private String backedMessage;
+    private String backendMessage;
 
     private String message;
     
+    private String url;
+    
+    private String method;
+    
     private int httpCode;
 
-    private LocalDateTime time;
+    private LocalDateTime timestamp;
 
-    public String getBackedMessage() {
-        return backedMessage;
-    }
+	public String getBackendMessage() {
+		return backendMessage;
+	}
 
-    public void setBackedMessage(String backedMessage) {
-        this.backedMessage = backedMessage;
-    }
+	public void setBackendMessage(String backendMessage) {
+		this.backendMessage = backendMessage;
+	}
 
-    public int getHttpCode() {
-        return httpCode;
-    }
+	public String getMessage() {
+		return message;
+	}
 
-    public void setHttpCode(int httpCode) {
-        this.httpCode = httpCode;
-    }
+	public void setMessage(String message) {
+		this.message = message;
+	}
 
-    public LocalDateTime getTime() {
-        return time;
-    }
+	public String getUrl() {
+		return url;
+	}
 
-    public void setTime(LocalDateTime time) {
-        this.time = time;
-    }
+	public void setUrl(String url) {
+		this.url = url;
+	}
 
-    public String getMessage() {
-        return message;
-    }
+	public String getMethod() {
+		return method;
+	}
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+	public void setMethod(String method) {
+		this.method = method;
+	}
+
+	public int getHttpCode() {
+		return httpCode;
+	}
+
+	public void setHttpCode(int httpCode) {
+		this.httpCode = httpCode;
+	}
+
+	public LocalDateTime getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(LocalDateTime timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	
+   
+    
 }
