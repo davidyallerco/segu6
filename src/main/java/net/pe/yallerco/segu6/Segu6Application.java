@@ -32,4 +32,7 @@ PUT: localhost:8020/api/v1/productos/1
 errores sale si pones una categoria que no existe
 errores sale si pones un precio 0.0, debe ser mayor a 1
 
+se agrego security en pom.xml
+
+
 */
